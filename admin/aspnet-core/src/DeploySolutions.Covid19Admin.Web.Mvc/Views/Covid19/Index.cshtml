@@ -1,0 +1,66 @@
+﻿@using DeploySolutions.Covid19Admin.Web.Startup
+@model DeploySolutions.Covid19Admin.Web.Models.Covid19.CovidCaseViewModel
+@{
+    ViewBag.Title = L("CovidCases");
+    ViewBag.CurrentPageName = PageNames.CovidCases;
+}
+@section scripts
+{
+    <environment names="Development">
+        <script src="~/libs/chartjs/dist/Chart.js" asp-append-version="true"></script>
+        <script src="~/view-resources/Views/Home/Index.js" asp-append-version="true"></script>
+    </environment>
+
+    <environment names="Staging,Production">
+        <script src="~/view-resources/Views/_Bundles/home-index.min.js" asp-append-version="true"></script>
+    </environment>
+}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-12">
+                <h1 class="m-0 text-dark">@L("CovidCases")</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="content">
+    <div class="container-fluid">
+        <!-- Info boxes -->
+        <div class="row">
+            <div>
+                <ul class="list-group" id="TaskList">
+                    @foreach (var covidCase in Model.CovidCases)
+                    {
+                    <li class="list-group-item">
+                        <span class="pull-right label @Model.GetTaskLabel(covidCase)">@L($"CaseOutcome_{covidCase.CaseOutcome}")</span>
+                        <h4 class="list-group-item-heading">@covidCase.Placename</h4>
+                        <div class="list-group-item-text">
+                            @covidCase.LocationType
+                        </div>
+                        <div class="list-group-item-text">
+                            @covidCase.Lat.ToString()
+                        </div>
+                        <div class="list-group-item-text">
+                            @covidCase.Long.ToString()
+                        </div>
+                        <div class="list-group-item-text">
+                            @covidCase.CaseOutcome
+                        </div>
+                        <div class="list-group-item-text">
+                            @covidCase.PatientAge
+                        </div>
+                        <div class="list-group-item-text">
+                            @covidCase.PatientGender
+                        </div>
+                        <div class="list-group-item-text">
+                            @covidCase.CreationTime.ToString("yyyy-MM-dd HH:mm:ss")
+                        </div>
+                    </li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+</section>
