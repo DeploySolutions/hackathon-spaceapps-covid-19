@@ -285,7 +285,7 @@ main .map .dot.dot3 {
     width: 40%;
     min-height: 150px;
     min-width: 250px;
-    border: 3px solid var(--color-pink-900);
+    border: 5px solid var(--color-pink-900);
   }
   
   /* The Close Button */
