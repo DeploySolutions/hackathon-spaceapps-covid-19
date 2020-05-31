@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <VersionPrefix>1.0.0.0</VersionPrefix>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>DeploySolutions.Covid19Admin.Application</AssemblyName>
+    <PackageId>DeploySolutions.Covid19Admin.Application</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>DeploySolutions.Covid19Admin</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.AspNetCore" Version="5.8.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeploySolutions.Covid19Admin.Core\DeploySolutions.Covid19Admin.Core.csproj" />
+  </ItemGroup>
+</Project>
