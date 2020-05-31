@@ -7,7 +7,7 @@ using System.Text;
 
 namespace DeploySolutions.Covid19Admin.Covid19.Dto
 {
-    [AutoMapFrom(typeof(CovidCase))]
+    [AutoMapFrom(typeof(EnvironmentFactor))]
     public class EnvironmentFactorListDto : EntityDto, IHasCreationTime
     {
         public string Placename { get; set; }
