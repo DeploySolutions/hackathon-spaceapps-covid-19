@@ -1,0 +1,108 @@
+:root {
+    /* COLORS */
+    /* -------------------------------------------------------------------------------- */
+
+    /* PINK */
+    --color-pink-300:                           #f06292;
+    --color-pink-700:                           #c2185b;
+    --color-pink-900:                           #880e4f;
+
+     /* BLUEGREY */
+     --color-bluegrey-600:                       #546E7A;
+     --color-bluegrey-700:                       #455A64;
+     --color-bluegrey-750:                       #3F4E57;
+     --color-bluegrey-800:                       #37464F;
+
+    /* BLACK / WHITE / TRANSPARENT */
+    --color-black:                              #000000;
+    --color-white:                              #FFFFFF;
+    --color-transparent:                        transparent;
+
+
+    /* COLORS - ABSTRACT */
+    /* -------------------------------------------------------------------------------- */
+    --color-primary:                           var(--color-pink-700);
+
+
+    /* FONTS */
+    /* -------------------------------------------------------------------------------- */
+
+    /* FONT FAMILY */
+    --font-family:                              'Inconsolata', monospace;
+
+    /* FONT WEIGHT */
+    --font-weight-light:                        300;
+    --font-weight-regular:                      400;
+    --font-weight-semibold:                     600;
+    --font-weight-extrabold:                    800;
+
+    /* FONT SIZE */
+    --font-size-10:                             10px;
+    --font-size-11:                             11px;
+    --font-size-12:                             12px;
+    --font-size-16:                             16px;
+    --font-size-21:                             21px;
+    --font-size-24:                             24px;
+    
+
+    /* SPACING */
+    /* -------------------------------------------------------------------------------- */
+    --spacing-1: 								1px;
+    --spacing-2: 								2px;
+    --spacing-3: 								3px;
+    --spacing-4:                                4px;
+    --spacing-8:                                8px;
+    --spacing-12:                               12px;
+    --spacing-16:                               16px;
+    --spacing-20:                               20px;
+    --spacing-24:                               24px;
+    --spacing-28:                               28px;
+    --spacing-32:                               32px;
+    --spacing-36:                               36px;
+    --spacing-40:                               40px;
+    --spacing-44:                               44px;
+    --spacing-48:                               48px;
+    --spacing-52:                               52px;
+    --spacing-54:                               54px;
+    --spacing-60:                               60px;
+
+
+    /* Z-INDEX */
+    /* -------------------------------------------------------------------------------- */
+    --zi-plus-one:								1;
+    --zi-modal: 								9;
+    --zi-notificaiton:                          99;
+    
+    
+    /* BOX SHADOW */
+    /* -------------------------------------------------------------------------------- */
+    --box-shadow:								0 0 0 1px rgba(5,5,5,.05), 0 1px 3px 0 rgba(5,5,5,.15);
+    
+    
+    /* TRANSITION - TIMERS */
+    /* -------------------------------------------------------------------------------- */
+    --transition-timer-200ms: 					.2s;
+    --transition-timer-400ms: 					.4s;
+    
+    
+    /* TRANSITION - EASING */
+    /* -------------------------------------------------------------------------------- */
+    --transition-easeInOutQuad:  				cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    
+    
+    /* TRANSITION - DEFAULTS */
+    /* -------------------------------------------------------------------------------- */
+    --transition-default:                       all var(--transition-timer-400ms) cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    --transition-200:                           all var(--transition-timer-200ms) cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    --transition-background-default:            background var(--transition-timer-400ms) cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    
+    /* BREAKPOINTS */
+    /* -------------------------------------------------------------------------------- */
+    --bp-smart:     							'max-width: 320px';
+    --bp-smart-460: 							'max-width: 460px';
+    --bp-smart-tablet:     						'max-width: 640px';
+    --bp-tablet:          						'max-width: 768px';
+    --bp-tablet-960: 							'max-width: 960px';
+    --bp-tablet-landscape:						'min-width: 1024px';
+    --bp-desktop:                        		'min-width: 1280px';
+}
