@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DeploySolutions.Covid19Admin.Migrations
 {
     [DbContext(typeof(Covid19AdminDbContext))]
-    [Migration("20200530172230_Initial_Migration")]
-    partial class Initial_Migration
+    [Migration("20200531192659_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -1510,6 +1510,99 @@ namespace DeploySolutions.Covid19Admin.Migrations
                     b.HasIndex("TenantId", "NormalizedUserName");
 
                     b.ToTable("AbpUsers");
+                });
+
+            modelBuilder.Entity("DeploySolutions.Covid19Admin.Covid19.CovidCase", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<string>("CaseOutcome")
+                        .IsRequired()
+                        .HasColumnType("character varying(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<DateTime>("CaseRecordedDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<decimal>("Lat")
+                        .HasColumnType("numeric");
+
+                    b.Property<string>("LocationType")
+                        .HasColumnType("character varying(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<decimal>("Long")
+                        .HasColumnType("numeric");
+
+                    b.Property<string>("PatientAge")
+                        .HasColumnType("character varying(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("PatientGender")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Placename")
+                        .IsRequired()
+                        .HasColumnType("character varying(256)")
+                        .HasMaxLength(256);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CovidCases");
+                });
+
+            modelBuilder.Entity("DeploySolutions.Covid19Admin.Covid19.EnvironmentFactor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("Indicator")
+                        .IsRequired()
+                        .HasColumnType("character varying(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<decimal>("Lat")
+                        .HasColumnType("numeric");
+
+                    b.Property<string>("LocationType")
+                        .HasColumnType("character varying(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<decimal>("Long")
+                        .HasColumnType("numeric");
+
+                    b.Property<DateTime>("MeasurementRecordedDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("Placename")
+                        .IsRequired()
+                        .HasColumnType("character varying(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("ValueDiscrete")
+                        .IsRequired()
+                        .HasColumnType("character varying(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("ValueRaw")
+                        .IsRequired()
+                        .HasColumnType("character varying(256)")
+                        .HasMaxLength(256);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EnvironmentFactors");
                 });
 
             modelBuilder.Entity("DeploySolutions.Covid19Admin.MultiTenancy.Tenant", b =>

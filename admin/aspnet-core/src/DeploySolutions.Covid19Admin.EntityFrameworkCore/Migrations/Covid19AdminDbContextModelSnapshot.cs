@@ -1538,8 +1538,9 @@ namespace DeploySolutions.Covid19Admin.Migrations
                     b.Property<decimal>("Long")
                         .HasColumnType("numeric");
 
-                    b.Property<decimal>("PatientAge")
-                        .HasColumnType("numeric");
+                    b.Property<string>("PatientAge")
+                        .HasColumnType("character varying(256)")
+                        .HasMaxLength(256);
 
                     b.Property<string>("PatientGender")
                         .HasColumnType("text");

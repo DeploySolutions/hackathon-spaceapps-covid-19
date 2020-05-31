@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace DeploySolutions.Covid19Admin.Migrations
 {
-    public partial class Initial_Migration : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -441,6 +441,48 @@ namespace DeploySolutions.Covid19Admin.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AbpWebhookSubscriptions", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "CovidCases",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Placename = table.Column<string>(maxLength: 256, nullable: false),
+                    CaseOutcome = table.Column<string>(maxLength: 256, nullable: false),
+                    Lat = table.Column<decimal>(nullable: false),
+                    Long = table.Column<decimal>(nullable: false),
+                    PatientAge = table.Column<string>(maxLength: 256, nullable: true),
+                    PatientGender = table.Column<string>(nullable: true),
+                    LocationType = table.Column<string>(maxLength: 256, nullable: true),
+                    CaseRecordedDate = table.Column<DateTime>(nullable: false),
+                    CreationTime = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CovidCases", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "EnvironmentFactors",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Placename = table.Column<string>(maxLength: 256, nullable: false),
+                    Indicator = table.Column<string>(maxLength: 256, nullable: false),
+                    ValueRaw = table.Column<string>(maxLength: 256, nullable: false),
+                    ValueDiscrete = table.Column<string>(maxLength: 256, nullable: false),
+                    Lat = table.Column<decimal>(nullable: false),
+                    Long = table.Column<decimal>(nullable: false),
+                    LocationType = table.Column<string>(maxLength: 256, nullable: true),
+                    MeasurementRecordedDate = table.Column<DateTime>(nullable: false),
+                    CreationTime = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_EnvironmentFactors", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -1298,6 +1340,12 @@ namespace DeploySolutions.Covid19Admin.Migrations
 
             migrationBuilder.DropTable(
                 name: "AbpWebhookSubscriptions");
+
+            migrationBuilder.DropTable(
+                name: "CovidCases");
+
+            migrationBuilder.DropTable(
+                name: "EnvironmentFactors");
 
             migrationBuilder.DropTable(
                 name: "AbpEntityDynamicParameters");

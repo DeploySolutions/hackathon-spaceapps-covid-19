@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DeploySolutions.Covid19Admin.Migrations
 {
     [DbContext(typeof(Covid19AdminDbContext))]
-    [Migration("20200531121451_EnvironmentFactors")]
-    partial class EnvironmentFactors
+    [Migration("20200531194525_Initial_Migration")]
+    partial class Initial_Migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -1540,8 +1540,9 @@ namespace DeploySolutions.Covid19Admin.Migrations
                     b.Property<decimal>("Long")
                         .HasColumnType("numeric");
 
-                    b.Property<decimal>("PatientAge")
-                        .HasColumnType("numeric");
+                    b.Property<string>("PatientAge")
+                        .HasColumnType("character varying(256)")
+                        .HasMaxLength(256);
 
                     b.Property<string>("PatientGender")
                         .HasColumnType("text");
