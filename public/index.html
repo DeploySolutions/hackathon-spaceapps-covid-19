@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="variables.css">
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600;800&display=swap" rel="stylesheet">
+        <!-- Map Box Resources -->
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css' rel='stylesheet' />
     </head>
     <body>
         <div class="app">
@@ -83,17 +86,17 @@
                 </aside>
 
                 <!-- MAP -->
-                <section class="map">
-                    <div class="dot dot1"></div>
+                <div id="map-container" class="map">
+                    <!-- <div class="dot dot1"></div>
                     <div class="dot dot2"></div>
-                    <div class="dot dot3"></div>
+                    <div class="dot dot3"></div> -->
 
-                    <img src="./img/map.png">
+                    <!-- <img src="./img/map.png"> -->
 
-                    <div class="slider">
+                    <!-- <div class="slider">
                         <img src="./img/slider.png">
-                    </div>
-                </section>
+                    </div> -->
+                </div>
             </main>
         </div>
 
@@ -105,6 +108,11 @@
                 $(document).on("click", '.info', function(e, ele){
                     alert("TOOLTIP HERE");
                 });                
+            });
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYWRhbWpzaW0iLCJhIjoiY2thdmF0Ym9kMGNhbTJ6a3l5dzl3ZmdrcCJ9.YcSMrFRPTc7hCZgYkJeoSQ';
+                var map = new mapboxgl.Map({
+                container: 'map-container',
+                style: 'mapbox://styles/mapbox/streets-v9'
             });
         </script>
     </body>
