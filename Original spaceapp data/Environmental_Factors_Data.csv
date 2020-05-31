@@ -1,0 +1,13 @@
+﻿Id,Placename,Indicator,ValueRaw,ValueDiscrete,Lat,Long,LocationType,MeasurementRecordedDate,CreationTime
+1,Waterloo,Night_Light,DN_Value,Low,43.47972,-80.54111,City,1/1/2020,5/31/2020 0:00
+2,Simcoe,Night_Light,DN_Value,Medium,42.84186,-80.31405,Locality,1/1/2020,5/31/2020 0:00
+3,Toronto,NO2,Raw??,High,43.7417,-79.3733,City,1/10/2020,5/31/2020 0:00
+4,Toronto,NO2,Raw??,Low,43.7417,-79.3733,City,1/15/2020,5/31/2020 0:00
+5,Toronto,Activity_level,Index_Value,Medium,43.7417,-79.3733,City,1/21/2020,5/31/2020 0:00
+6,Toronto,Activity_level,Index_Value,High,43.7417,-79.3733,City,1/22/2020,5/31/2020 0:00
+7,London,Covid_policy,DN_Value,Restrictive,42.9675,-81.2325,City,1/24/2020,5/31/2020 0:00
+8,Belleville,Covid_policy,DN_Value,Semi-Restrictive,44.25667,-77.36972,City,2/1/2020,5/31/2020 0:00
+9,Toronto,Covid_policy,Raw??,Loose,43.7417,-79.3733,City,2/1/2020,5/31/2020 0:00
+10,Toronto,Covid_policy,Raw??,Restrictive,43.7417,-79.3733,City,2/5/2020,5/31/2020 0:00
+11,Toronto,Covid_policy,Index_Value,Semi-Restrictive,43.7417,-79.3733,City,2/7/2020,5/31/2020 0:00
+12,Ottawa,Covid_policy,Index_Value,Loose,45.33339,-75.58429,City,2/10/2020,5/31/2020 0:00
