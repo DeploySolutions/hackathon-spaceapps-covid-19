@@ -1,0 +1,13 @@
+﻿MeasurementRecordedDate,Indicator,Lat,Long,LocationType,Placename,ValueRaw,ValueDiscrete
+1/1/2020,Night_Light,43.47972,-80.54111,City,Waterloo,DN_Value,Low/Medium/High
+1/1/2020,Night_Light,42.84186,-80.31405,Locality,Simcoe,DN_Value,Low/Medium/High
+1/10/2020,NO2,43.7417,-79.3733,City,Toronto,Raw??,Low/Medium/High
+1/15/2020,NO2,43.7417,-79.3733,City,Toronto,Raw??,Low/Medium/High
+1/21/2020,Activity_level,43.7417,-79.3733,City,Toronto,Index_Value,Low/Medium/High
+1/22/2020,Activity_level,43.7417,-79.3733,City,Toronto,Index_Value,Low/Medium/High
+1/24/2020,Covid_policy,42.9675,-81.2325,City,London,DN_Value,Restrictive
+2/1/2020,Covid_policy,44.25667,-77.36972,City,Belleville,DN_Value,Semi-Restrictive
+2/1/2020,Covid_policy,43.7417,-79.3733,City,Toronto,Raw??,Loose
+2/5/2020,Covid_policy,43.7417,-79.3733,City,Toronto,Raw??,Restrictive
+2/7/2020,Covid_policy,43.7417,-79.3733,City,Toronto,Index_Value,Semi-Restrictive
+2/10/2020,Covid_policy,45.33339,-75.58429,City,Ottawa,Index_Value,Loose
