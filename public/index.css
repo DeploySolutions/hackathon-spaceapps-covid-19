@@ -302,3 +302,7 @@ main .map .dot.dot3 {
     text-decoration: none;
     cursor: pointer;
   }
+
+a.mapboxgl-ctrl-logo {
+      display: none !important;
+  }
