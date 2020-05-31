@@ -1,4 +1,4 @@
-﻿INSERT INTO "postgres".public."EnvironmentFactors" ("Id"
+INSERT INTO "postgres".public."EnvironmentFactors" ("Id"
  ,"Placename"
  ,"Indicator"
  ,"ValueRaw"
