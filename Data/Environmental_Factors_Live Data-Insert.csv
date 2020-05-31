@@ -1,4 +1,4 @@
-﻿INSERT INTO "covid19-admin".public."EnvironmentFactors" ("Id"
+﻿INSERT INTO "postgres".public."EnvironmentFactors" ("Id"
  ,"Placename"
  ,"Indicator"
  ,"ValueRaw"
@@ -15,7 +15,7 @@
 (3,'Toronto_R','Night_Light',21698.78711,'medium',45.1507,-79.4174,'Rural','2019-03-02','2020-05-31'),
 (4,'Toronto_R','Night_Light',24259.45703,'high',45.1507,-79.4174,'Rural','2019-03-02','2020-05-31'),
 (5,'Toronto_R','Night_Light',19735.66406,'medium',45.1507,-79.4174,'Rural','2019-03-03','2020-05-31'),
-(5,'Toronto_R','Night_Light',22403.10156,'high',45.1507,-79.4174,'Rural','2019-03-03','2020-05-31'),
+(6,'Toronto_R','Night_Light',22403.10156,'high',45.1507,-79.4174,'Rural','2019-03-03','2020-05-31'),
 (7,'Toronto_R','Night_Light',23228.22852,'high',45.1507,-79.4174,'Rural','2019-03-04','2020-05-31'),
 (8,'Toronto_R','Night_Light',24815.375,'high',45.1507,-79.4174,'Rural','2019-03-04','2020-05-31'),
 (10,'Toronto_R','Night_Light',14688.32227,'low',45.1507,-79.4174,'Rural','2019-03-05','2020-05-31'),
