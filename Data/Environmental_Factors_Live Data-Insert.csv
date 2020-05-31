@@ -1,4 +1,16 @@
-﻿Id,Placename,Indicator,ValueRaw,ValueDiscrete,Lat,Long,LocationType,MeasurementRecordedDate,CreationTime,,
+﻿INSERT INTO postgres.public."EnvironmentFactors" ("Id"
+ ,"Placename"
+ ,"Indicator"
+ ,"ValueRaw"
+ ,"ValueDiscrete"
+ ,"Lat"
+ ,"Long"
+ ,"LocationType"
+ ,"MeasurementRecordedDate"
+ ,"CreationTime"
+ 
+) VALUES
+Id,Placename,Indicator,ValueRaw,ValueDiscrete,Lat,Long,LocationType,MeasurementRecordedDate,CreationTime,,
 1,'Waterloo','Night_Light','DN_Value','Low','43.47972','-80.541110000000003','City','2020-01-01','2020-05-31 00:00:00',,"(1,'Waterloo','Night_Light','DN_Value','Low','43.47972','-80.541110000000003','City','2020-01-01','2020-05-31 00:00:00'),"
 2,'Simcoe','Night_Light','DN_Value','Medium','42.841859999999997','-80.314049999999995','Locality','2020-01-01','2020-05-31 00:00:00',,"(2,'Simcoe','Night_Light','DN_Value','Medium','42.841859999999997','-80.314049999999995','Locality','2020-01-01','2020-05-31 00:00:00'),"
 3,'Toronto','NO2','Raw??','High','43.741700000000002','-79.3733','City','2020-01-10','2020-05-31 00:00:00',,"(3,'Toronto','NO2','Raw??','High','43.741700000000002','-79.3733','City','2020-01-10','2020-05-31 00:00:00'),"
@@ -11,3 +23,4 @@
 10,'Toronto','Covid_policy','Raw??','Restrictive','43.741700000000002','-79.3733','City','2020-02-05','2020-05-31 00:00:00',,"(10,'Toronto','Covid_policy','Raw??','Restrictive','43.741700000000002','-79.3733','City','2020-02-05','2020-05-31 00:00:00'),"
 11,'Toronto','Covid_policy','Index_Value','Semi-Restrictive','43.741700000000002','-79.3733','City','2020-02-07','2020-05-31 00:00:00',,"(11,'Toronto','Covid_policy','Index_Value','Semi-Restrictive','43.741700000000002','-79.3733','City','2020-02-07','2020-05-31 00:00:00'),"
 12,'Ottawa','Covid_policy','Index_Value','Loose','45.333390000000001','-75.584289999999996','City','2020-02-10','2020-05-31 00:00:00',,"(12,'Ottawa','Covid_policy','Index_Value','Loose','45.333390000000001','-75.584289999999996','City','2020-02-10','2020-05-31 00:00:00'),"
+;

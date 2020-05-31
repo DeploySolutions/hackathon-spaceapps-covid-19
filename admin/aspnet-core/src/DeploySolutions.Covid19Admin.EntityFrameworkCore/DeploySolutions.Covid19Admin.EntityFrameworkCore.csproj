@@ -12,6 +12,8 @@
     <Compile Remove="Migrations\20180726102624_Upgrade_ABP_380.cs" />
     <Compile Remove="Migrations\20180927062408_test.cs" />
     <Compile Remove="Migrations\20190111071724_Upgraded_To_Abp_v4_1_0.cs" />
+    <Compile Remove="Migrations\20200531191136_Initial.cs" />
+    <Compile Remove="Migrations\20200531191136_Initial.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
@@ -23,7 +25,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.4" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DeploySolutions.Covid19Admin.Core\DeploySolutions.Covid19Admin.Core.csproj" />

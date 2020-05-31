@@ -18,7 +18,7 @@ namespace DeploySolutions.Covid19Admin.Covid19.Dto
 
         public decimal Long { get; set; }
 
-        public decimal PatientAge { get; set; }
+        public string PatientAge { get; set; }
 
         public string PatientGender { get; set; }
 
