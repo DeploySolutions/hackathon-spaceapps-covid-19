@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DeploySolutions.Covid19Admin.Migrations
 {
     [DbContext(typeof(Covid19AdminDbContext))]
-    [Migration("20200531194525_Initial_Migration")]
-    partial class Initial_Migration
+    [Migration("20200531201037_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
