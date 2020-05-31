@@ -37019,3 +37019,862 @@ INFO  2020-05-31 12:44:33,016 [5    ] Mvc.Infrastructure.ContentResultExecutor -
 INFO  2020-05-31 12:44:33,018 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 1854.7872ms
 INFO  2020-05-31 12:44:33,020 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
 INFO  2020-05-31 12:44:33,022 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1903.2275ms 200 application/x-javascript; charset=utf-8
+DEBUG 2020-05-31 12:48:08,985 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-05-31 12:48:09,120 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-05-31 12:48:09,145 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Web.Startup.Covid19AdminWebMvcModule, DeploySolutions.Covid19Admin.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,148 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminWebCoreModule, DeploySolutions.Covid19Admin.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminApplicationModule, DeploySolutions.Covid19Admin.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminCoreModule, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,150 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,150 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,150 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,151 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,151 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,152 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,152 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.EntityFrameworkCore.Covid19AdminEntityFrameworkModule, DeploySolutions.Covid19Admin.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,152 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,152 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,153 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,153 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:09,157 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-05-31 12:48:09,315 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 12:48:09,315 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 12:48:09,315 [1    ] o.Configuration.LanguageManagementConfig - Converted Covid19Admin (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 12:48:09,315 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 12:48:10,051 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: DeploySolutions.Covid19Admin.EntityFrameworkCore.Covid19AdminDbContext, DeploySolutions.Covid19Admin.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 12:48:11,370 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-05-31 12:48:11,494 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-05-31 12:48:11,516 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-05-31 12:48:11,523 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Covid19Admin
+DEBUG 2020-05-31 12:48:11,532 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-05-31 12:48:11,782 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-05-31 12:48:11,956 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[DeploySolutions.Covid19Admin.MultiTenancy.Tenant, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DeploySolutions.Covid19Admin.Authorization.Users.User, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-05-31 12:48:12,117 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2020-05-31 12:48:12,117 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-05-31 12:48:12,125 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Users.Dto.CreateUserDto
+DEBUG 2020-05-31 12:48:12,125 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Users.Dto.UserDto
+DEBUG 2020-05-31 12:48:12,126 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-05-31 12:48:12,126 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-05-31 12:48:12,126 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Roles.Dto.PermissionDto
+DEBUG 2020-05-31 12:48:12,126 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-05-31 12:48:12,127 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.MultiTenancy.Dto.TenantDto
+DEBUG 2020-05-31 12:48:12,127 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Covid19.Dto.CovidCaseListDto
+DEBUG 2020-05-31 12:48:12,127 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Covid19.Dto.EnvironmentFactorListDto
+DEBUG 2020-05-31 12:48:12,127 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2020-05-31 12:48:12,127 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Web.Models.Roles.EditRoleModalViewModel
+INFO  2020-05-31 12:48:27,050 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2020-05-31 12:48:27,990 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-05-31 12:48:28,406 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2020-05-31 12:48:28,406 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2020-05-31 12:48:28,476 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 65.8108ms 200 
+INFO  2020-05-31 12:48:28,634 [12   ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2020-05-31 12:48:28,711 [12   ] uthorization.DefaultAuthorizationService - Authorization failed.
+INFO  2020-05-31 12:48:28,728 [12   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2020-05-31 12:48:28,736 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 335.3414ms 302 
+INFO  2020-05-31 12:48:29,012 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
+INFO  2020-05-31 12:48:29,020 [4    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2020-05-31 12:48:29,023 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'DeploySolutions.Covid19Admin.Web.Controllers.AccountController.Login (DeploySolutions.Covid19Admin.Web.Mvc)'
+WARN  2020-05-31 12:48:31,975 [5    ] Abp.BackgroundJobs.BackgroundJobManager  - System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.ConnectorPool.AllocateLong(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<>c__DisplayClass32_0.<<Open>g__OpenLong|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.<>c__DisplayClass26_0.<BeginTransaction>b__0(DatabaseFacade database)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation, Func`2 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.BeginTransaction(DatabaseFacade databaseFacade, IsolationLevel isolationLevel)
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name)
+   at Abp.EntityFrameworkCore.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide, String name)
+   at Abp.EntityFrameworkCore.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide)
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Context()
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.<GetQueryable>b__7_0(Type key)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetQueryable()
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors)
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAll()
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AsyncDeterminationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobs(Int32 maxResultCount)
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobs_callback(Int32 maxResultCount)
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobs.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AsyncDeterminationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobs(Int32 maxResultCount)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork()
+   at Castle.Proxies.BackgroundJobManagerProxy.DoWork_callback()
+   at Castle.Proxies.Invocations.BackgroundJobManager_DoWork.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AsyncDeterminationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobManagerProxy.DoWork()
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Exception while connecting
+ ---> System.TimeoutException: Timeout during connection attempt
+   at Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.ConnectorPool.AllocateLong(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<>c__DisplayClass32_0.<<Open>g__OpenLong|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.<>c__DisplayClass26_0.<BeginTransaction>b__0(DatabaseFacade database)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation, Func`2 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.BeginTransaction(DatabaseFacade databaseFacade, IsolationLevel isolationLevel)
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide, String name)
+   at Abp.EntityFrameworkCore.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide, String name)
+   at Abp.EntityFrameworkCore.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide)
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Context()
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.<GetQueryable>b__7_0(Type key)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetQueryable()
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors)
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAll()
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AsyncDeterminationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobs(Int32 maxResultCount)
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobs_callback(Int32 maxResultCount)
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobs.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AsyncDeterminationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobs(Int32 maxResultCount)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork()
+   at Castle.Proxies.BackgroundJobManagerProxy.DoWork_callback()
+   at Castle.Proxies.Invocations.BackgroundJobManager_DoWork.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InterceptSynchronous(IInvocation invocation)
+   at Castle.DynamicProxy.AsyncDeterminationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobManagerProxy.DoWork()
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+INFO  2020-05-31 12:48:32,221 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(System.String, System.String, System.String) on controller DeploySolutions.Covid19Admin.Web.Controllers.AccountController (DeploySolutions.Covid19Admin.Web.Mvc).
+INFO  2020-05-31 12:48:38,421 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2020-05-31 12:48:39,568 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 1203.8339ms.
+INFO  2020-05-31 12:48:39,572 [6    ] c.Infrastructure.ControllerActionInvoker - Executed action DeploySolutions.Covid19Admin.Web.Controllers.AccountController.Login (DeploySolutions.Covid19Admin.Web.Mvc) in 7348.5257ms
+INFO  2020-05-31 12:48:39,574 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'DeploySolutions.Covid19Admin.Web.Controllers.AccountController.Login (DeploySolutions.Covid19Admin.Web.Mvc)'
+INFO  2020-05-31 12:48:39,587 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10575.2157ms 200 text/html; charset=utf-8
+INFO  2020-05-31 12:48:39,706 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637265260919581414  
+INFO  2020-05-31 12:48:39,714 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637265260919581414  
+INFO  2020-05-31 12:48:39,716 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js?v=637265261195534667  
+INFO  2020-05-31 12:48:39,719 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/_Layout.css?v=pk1udUQR7bqKUWFxSnrnIl0MM8MH2Wu05p-zpysBQWI  
+INFO  2020-05-31 12:48:39,721 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.js?v=KxhHl3HYb-UQucT7TN2ewhzzgV_WwxRaGwGaSiT8xzM  
+INFO  2020-05-31 12:48:39,727 [4    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2020-05-31 12:48:39,729 [14   ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2020-05-31 12:48:39,731 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2020-05-31 12:48:39,732 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2020-05-31 12:48:39,745 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2020-05-31 12:48:39,749 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2020-05-31 12:48:39,756 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2020-05-31 12:48:39,758 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/Login.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\view-resources\Views\Account\Login.js'
+INFO  2020-05-31 12:48:39,760 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 47.0812ms 200 application/javascript
+INFO  2020-05-31 12:48:39,762 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 38.5872ms 200 application/javascript
+INFO  2020-05-31 12:48:39,780 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Account/_Layout.css was not modified
+INFO  2020-05-31 12:48:39,782 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 62.9586ms 304 text/css
+INFO  2020-05-31 12:48:39,804 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/libs/font-awesome/webfonts/fa-solid-900.woff2  
+INFO  2020-05-31 12:48:39,820 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/font-awesome/webfonts/fa-solid-900.woff2'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\font-awesome\webfonts\fa-solid-900.woff2'
+INFO  2020-05-31 12:48:39,822 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 18.2663ms 200 font/woff2
+INFO  2020-05-31 12:48:39,906 [4    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2020-05-31 12:48:39,908 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 157.3165ms
+INFO  2020-05-31 12:48:39,910 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2020-05-31 12:48:39,912 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 207.8654ms 200 application/x-javascript
+INFO  2020-05-31 12:48:40,084 [14   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2020-05-31 12:48:40,087 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 340.8744ms
+INFO  2020-05-31 12:48:40,089 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2020-05-31 12:48:40,091 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 378.1767ms 200 application/x-javascript; charset=utf-8
+INFO  2020-05-31 12:48:48,020 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/Account/Login application/x-www-form-urlencoded 256
+INFO  2020-05-31 12:48:48,026 [5    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2020-05-31 12:48:48,028 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'DeploySolutions.Covid19Admin.Web.Controllers.AccountController.Login (DeploySolutions.Covid19Admin.Web.Mvc)'
+INFO  2020-05-31 12:48:48,042 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] Login(DeploySolutions.Covid19Admin.Web.Models.Account.LoginViewModel, System.String, System.String) on controller DeploySolutions.Covid19Admin.Web.Controllers.AccountController (DeploySolutions.Covid19Admin.Web.Mvc).
+INFO  2020-05-31 12:48:50,042 [7    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application signed in.
+INFO  2020-05-31 12:48:50,218 [17   ] tonsoftJson.NewtonsoftJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-05-31 12:48:50,237 [17   ] c.Infrastructure.ControllerActionInvoker - Executed action DeploySolutions.Covid19Admin.Web.Controllers.AccountController.Login (DeploySolutions.Covid19Admin.Web.Mvc) in 2193.8241ms
+INFO  2020-05-31 12:48:50,239 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'DeploySolutions.Covid19Admin.Web.Controllers.AccountController.Login (DeploySolutions.Covid19Admin.Web.Mvc)'
+INFO  2020-05-31 12:48:50,241 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2221.4324ms 200 application/json; charset=utf-8
+INFO  2020-05-31 12:48:50,299 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2020-05-31 12:48:50,341 [17   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2020-05-31 12:48:50,347 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc)'
+INFO  2020-05-31 12:48:50,353 [17   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller DeploySolutions.Covid19Admin.Web.Controllers.HomeController (DeploySolutions.Covid19Admin.Web.Mvc).
+INFO  2020-05-31 12:48:50,490 [4    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2020-05-31 12:48:50,864 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CovidCases' in localization source 'Covid19Admin'!
+WARN  2020-05-31 12:48:50,865 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'EnvironmentFactors' in localization source 'Covid19Admin'!
+INFO  2020-05-31 12:48:51,526 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 1039.1937ms.
+INFO  2020-05-31 12:48:51,529 [6    ] c.Infrastructure.ControllerActionInvoker - Executed action DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc) in 1175.1186ms
+INFO  2020-05-31 12:48:51,531 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc)'
+INFO  2020-05-31 12:48:51,533 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1234.389ms 200 text/html; charset=utf-8
+INFO  2020-05-31 12:48:51,627 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637265260919581414  
+INFO  2020-05-31 12:48:51,630 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637265260919581414  
+INFO  2020-05-31 12:48:51,637 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2020-05-31 12:48:51,639 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2020-05-31 12:48:51,643 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2020-05-31 12:48:51,646 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2020-05-31 12:48:51,650 [5    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2020-05-31 12:48:51,655 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 8.29ms
+INFO  2020-05-31 12:48:51,658 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2020-05-31 12:48:51,664 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 34.14ms 200 application/x-javascript
+WARN  2020-05-31 12:48:51,674 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'CovidCases' in localization source 'Covid19Admin'!
+WARN  2020-05-31 12:48:51,674 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'EnvironmentFactors' in localization source 'Covid19Admin'!
+INFO  2020-05-31 12:48:51,755 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2020-05-31 12:48:51,761 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2020-05-31 12:48:51,793 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2020-05-31 12:48:51,795 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 39.3941ms 200 application/json
+INFO  2020-05-31 12:48:51,803 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=22CM1GMAzifh4o0wcOk3pg  
+INFO  2020-05-31 12:48:51,809 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2020-05-31 12:48:51,828 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2020-05-31 12:48:51,830 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 182.154ms
+INFO  2020-05-31 12:48:51,831 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2020-05-31 12:48:51,834 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 208.1305ms 200 application/x-javascript; charset=utf-8
+DEBUG 2020-05-31 12:48:51,942 [4    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"22CM1GMAzifh4o0wcOk3pg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2020-05-31T12:48:51.9254878-04:00","Properties":{}}
+DEBUG 2020-05-31 12:48:51,978 [4    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 22CM1GMAzifh4o0wcOk3pg
+DEBUG 2020-05-31 14:02:01,881 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-05-31 14:02:01,987 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-05-31 14:02:02,015 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Web.Startup.Covid19AdminWebMvcModule, DeploySolutions.Covid19Admin.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,017 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminWebCoreModule, DeploySolutions.Covid19Admin.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,017 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminApplicationModule, DeploySolutions.Covid19Admin.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,018 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminCoreModule, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,018 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,018 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,019 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,019 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,019 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,019 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,020 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.EntityFrameworkCore.Covid19AdminEntityFrameworkModule, DeploySolutions.Covid19Admin.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,020 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,020 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,020 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,021 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:02,024 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-05-31 14:02:02,104 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:02:02,104 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:02:02,104 [1    ] o.Configuration.LanguageManagementConfig - Converted Covid19Admin (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:02:02,105 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:02:02,575 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: DeploySolutions.Covid19Admin.EntityFrameworkCore.Covid19AdminDbContext, DeploySolutions.Covid19Admin.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:02:03,534 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-05-31 14:02:03,628 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-05-31 14:02:03,644 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-05-31 14:02:03,651 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Covid19Admin
+DEBUG 2020-05-31 14:02:03,660 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-05-31 14:02:03,873 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-05-31 14:02:04,002 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[DeploySolutions.Covid19Admin.MultiTenancy.Tenant, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DeploySolutions.Covid19Admin.Authorization.Users.User, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-05-31 14:02:04,161 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2020-05-31 14:02:04,161 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-05-31 14:02:04,170 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Users.Dto.CreateUserDto
+DEBUG 2020-05-31 14:02:04,171 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Users.Dto.UserDto
+DEBUG 2020-05-31 14:02:04,171 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-05-31 14:02:04,172 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-05-31 14:02:04,172 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Roles.Dto.PermissionDto
+DEBUG 2020-05-31 14:02:04,172 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-05-31 14:02:04,172 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.MultiTenancy.Dto.TenantDto
+DEBUG 2020-05-31 14:02:04,172 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Covid19.Dto.CovidCaseListDto
+DEBUG 2020-05-31 14:02:04,172 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Covid19.Dto.EnvironmentFactorListDto
+DEBUG 2020-05-31 14:02:04,172 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2020-05-31 14:02:04,172 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Web.Models.Roles.EditRoleModalViewModel
+INFO  2020-05-31 14:02:11,749 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2020-05-31 14:02:12,422 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-05-31 14:02:12,819 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2020-05-31 14:02:12,820 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2020-05-31 14:02:12,891 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 67.8379ms 200 
+INFO  2020-05-31 14:02:16,846 [9    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2020-05-31 14:02:16,849 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc)'
+INFO  2020-05-31 14:02:17,094 [9    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller DeploySolutions.Covid19Admin.Web.Controllers.HomeController (DeploySolutions.Covid19Admin.Web.Mvc).
+INFO  2020-05-31 14:02:17,483 [4    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2020-05-31 14:02:19,289 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CovidCases' in localization source 'Covid19Admin'!
+WARN  2020-05-31 14:02:19,290 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'EnvironmentFactors' in localization source 'Covid19Admin'!
+INFO  2020-05-31 14:02:20,090 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 2657.4695ms.
+INFO  2020-05-31 14:02:20,097 [6    ] c.Infrastructure.ControllerActionInvoker - Executed action DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc) in 2999.5877ms
+INFO  2020-05-31 14:02:20,100 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc)'
+INFO  2020-05-31 14:02:20,115 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 7301.4886ms 200 text/html; charset=utf-8
+INFO  2020-05-31 14:02:20,273 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637265305240038479  
+INFO  2020-05-31 14:02:20,277 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637265305240038479  
+INFO  2020-05-31 14:02:20,279 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/img/logo.png  
+INFO  2020-05-31 14:02:20,282 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/libs/admin-lte/dist/img/avatar5.png  
+INFO  2020-05-31 14:02:20,285 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=vMuHbqHh635SKL2RG2qsGGCDyHg1yFeGqhPKpS34g4k  
+INFO  2020-05-31 14:02:20,306 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2020-05-31 14:02:20,311 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2020-05-31 14:02:20,331 [7    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/img/logo.png'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\img\logo.png'
+INFO  2020-05-31 14:02:20,332 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2020-05-31 14:02:20,335 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 54.6398ms 200 image/png
+INFO  2020-05-31 14:02:20,336 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 55.4557ms 200 application/javascript
+INFO  2020-05-31 14:02:20,342 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/admin-lte/dist/img/avatar5.png'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\admin-lte\dist\img\avatar5.png'
+INFO  2020-05-31 14:02:20,344 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 65.2094ms 200 image/png
+INFO  2020-05-31 14:02:20,349 [12   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2020-05-31 14:02:20,354 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2020-05-31 14:02:20,446 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2020-05-31 14:02:20,459 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.png'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs-ext\famfamfam-flags\dist\sprite\famfamfam-flags.png'
+INFO  2020-05-31 14:02:20,461 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 14.7839ms 200 image/png
+INFO  2020-05-31 14:02:20,462 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/libs/font-awesome/webfonts/fa-solid-900.woff2  
+INFO  2020-05-31 14:02:20,468 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/font-awesome/webfonts/fa-solid-900.woff2'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\font-awesome\webfonts\fa-solid-900.woff2'
+INFO  2020-05-31 14:02:20,470 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 7.1107ms 200 font/woff2
+INFO  2020-05-31 14:02:20,525 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2020-05-31 14:02:20,534 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2020-05-31 14:02:20,560 [4    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2020-05-31 14:02:20,563 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 206.0756ms
+INFO  2020-05-31 14:02:20,566 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2020-05-31 14:02:20,568 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 294.5506ms 200 application/x-javascript
+INFO  2020-05-31 14:02:20,579 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2020-05-31 14:02:20,580 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 55.6141ms 200 application/json
+WARN  2020-05-31 14:02:20,585 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'CovidCases' in localization source 'Covid19Admin'!
+WARN  2020-05-31 14:02:20,585 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'EnvironmentFactors' in localization source 'Covid19Admin'!
+INFO  2020-05-31 14:02:20,589 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=a4IyVz5akhIaBk3tgs5j-Q  
+INFO  2020-05-31 14:02:20,594 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2020-05-31 14:02:20,737 [12   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"a4IyVz5akhIaBk3tgs5j-Q","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2020-05-31T14:02:20.7231801-04:00","Properties":{}}
+DEBUG 2020-05-31 14:02:20,773 [12   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: a4IyVz5akhIaBk3tgs5j-Q
+INFO  2020-05-31 14:02:20,779 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2020-05-31 14:02:20,781 [6    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 430.8984ms
+INFO  2020-05-31 14:02:20,783 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2020-05-31 14:02:20,785 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 508.9698ms 200 application/x-javascript; charset=utf-8
+DEBUG 2020-05-31 14:02:29,156 [4    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: a4IyVz5akhIaBk3tgs5j-Q
+INFO  2020-05-31 14:02:29,169 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2020-05-31 14:02:29,172 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 8581.6027ms 101 
+INFO  2020-05-31 14:02:29,173 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2020-05-31 14:02:29,180 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2020-05-31 14:02:29,182 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2020-05-31 14:02:29,184 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 12.5262ms 200 application/json
+INFO  2020-05-31 14:02:29,189 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=8X6J5Peblcq86HMVNWqSPQ  
+INFO  2020-05-31 14:02:29,193 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2020-05-31 14:02:29,200 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"8X6J5Peblcq86HMVNWqSPQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2020-05-31T14:02:29.1998592-04:00","Properties":{}}
+INFO  2020-05-31 14:02:29,295 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/api/services/app/environmentfactor/GetAll  
+INFO  2020-05-31 14:02:29,300 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'DeploySolutions.Covid19Admin.Covid19.EnvironmentFactorAppService.GetAll (DeploySolutions.Covid19Admin.Application)'
+INFO  2020-05-31 14:02:29,306 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "EnvironmentFactor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.ListResultDto`1[DeploySolutions.Covid19Admin.Covid19.Dto.EnvironmentFactorListDto]] GetAll(DeploySolutions.Covid19Admin.Covid19.Dto.GetAllEnvironmentFactorsInput) on controller DeploySolutions.Covid19Admin.Covid19.EnvironmentFactorAppService (DeploySolutions.Covid19Admin.Application).
+ERROR 2020-05-31 14:02:31,087 [5    ] Mvc.ExceptionHandling.AbpExceptionFilter - Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[DeploySolutions.Covid19Admin.Covid19.EnvironmentFactor, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[DeploySolutions.Covid19Admin.Covid19.Dto.EnvironmentFactorListDto, DeploySolutions.Covid19Admin.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[DeploySolutions.Covid19Admin.Covid19.EnvironmentFactor, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[DeploySolutions.Covid19Admin.Covid19.Dto.EnvironmentFactorListDto, DeploySolutions.Covid19Admin.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+EnvironmentFactor -> EnvironmentFactorListDto
+DeploySolutions.Covid19Admin.Covid19.EnvironmentFactor -> DeploySolutions.Covid19Admin.Covid19.Dto.EnvironmentFactorListDto
+   at lambda_method(Closure , EnvironmentFactor , EnvironmentFactorListDto , ResolutionContext )
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Abp.AutoMapper.AutoMapperObjectMapper.Map[TDestination](Object source)
+   at DeploySolutions.Covid19Admin.Covid19.EnvironmentFactorAppService.GetAll(GetAllEnvironmentFactorsInput input) in F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Application\Covid19\EnvironmentFactorAppService.cs:line 24
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2020-05-31 14:02:31,108 [5    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-05-31 14:02:31,140 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action DeploySolutions.Covid19Admin.Covid19.EnvironmentFactorAppService.GetAll (DeploySolutions.Covid19Admin.Application) in 1832.447ms
+INFO  2020-05-31 14:02:31,142 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'DeploySolutions.Covid19Admin.Covid19.EnvironmentFactorAppService.GetAll (DeploySolutions.Covid19Admin.Application)'
+INFO  2020-05-31 14:02:31,144 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1849.3079ms 500 application/json; charset=utf-8
+DEBUG 2020-05-31 14:02:31,162 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 8X6J5Peblcq86HMVNWqSPQ
+INFO  2020-05-31 14:02:31,164 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2020-05-31 14:02:31,166 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1976.7641ms 101 
+DEBUG 2020-05-31 14:05:16,553 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-05-31 14:05:16,635 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-05-31 14:05:16,652 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Web.Startup.Covid19AdminWebMvcModule, DeploySolutions.Covid19Admin.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,654 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminWebCoreModule, DeploySolutions.Covid19Admin.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,654 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminApplicationModule, DeploySolutions.Covid19Admin.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,654 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminCoreModule, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,655 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,655 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,655 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,655 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,656 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,656 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,656 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.EntityFrameworkCore.Covid19AdminEntityFrameworkModule, DeploySolutions.Covid19Admin.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,657 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,657 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,657 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,657 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:16,660 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-05-31 14:05:16,732 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:05:16,732 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:05:16,732 [1    ] o.Configuration.LanguageManagementConfig - Converted Covid19Admin (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:05:16,732 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:05:17,157 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: DeploySolutions.Covid19Admin.EntityFrameworkCore.Covid19AdminDbContext, DeploySolutions.Covid19Admin.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:18,048 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-05-31 14:05:18,131 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-05-31 14:05:18,146 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-05-31 14:05:18,153 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Covid19Admin
+DEBUG 2020-05-31 14:05:18,161 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-05-31 14:05:18,340 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-05-31 14:05:18,449 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[DeploySolutions.Covid19Admin.MultiTenancy.Tenant, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DeploySolutions.Covid19Admin.Authorization.Users.User, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-05-31 14:05:18,594 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2020-05-31 14:05:18,594 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-05-31 14:05:18,602 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Users.Dto.CreateUserDto
+DEBUG 2020-05-31 14:05:18,603 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Users.Dto.UserDto
+DEBUG 2020-05-31 14:05:18,603 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-05-31 14:05:18,603 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-05-31 14:05:18,603 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Roles.Dto.PermissionDto
+DEBUG 2020-05-31 14:05:18,604 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-05-31 14:05:18,604 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.MultiTenancy.Dto.TenantDto
+DEBUG 2020-05-31 14:05:18,604 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Covid19.Dto.CovidCaseListDto
+DEBUG 2020-05-31 14:05:18,604 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Covid19.Dto.EnvironmentFactorListDto
+DEBUG 2020-05-31 14:05:18,604 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2020-05-31 14:05:18,604 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Web.Models.Roles.EditRoleModalViewModel
+INFO  2020-05-31 14:05:23,316 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2020-05-31 14:05:23,943 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-05-31 14:05:25,319 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2020-05-31 14:05:28,648 [8    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2020-05-31 14:05:28,651 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc)'
+INFO  2020-05-31 14:05:28,894 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller DeploySolutions.Covid19Admin.Web.Controllers.HomeController (DeploySolutions.Covid19Admin.Web.Mvc).
+INFO  2020-05-31 14:05:29,335 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2020-05-31 14:05:31,236 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'CovidCases' in localization source 'Covid19Admin'!
+WARN  2020-05-31 14:05:31,238 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'EnvironmentFactors' in localization source 'Covid19Admin'!
+INFO  2020-05-31 14:05:32,154 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 2862.6914ms.
+INFO  2020-05-31 14:05:32,164 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc) in 3266.5845ms
+INFO  2020-05-31 14:05:32,167 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc)'
+INFO  2020-05-31 14:05:32,181 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6866.4014ms 200 text/html; charset=utf-8
+INFO  2020-05-31 14:05:32,293 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/icheck-bootstrap/icheck-bootstrap.css?v=nGN1DgpDTrAS3DS7E5J0cL-gblWBKAMSoU_LSuY8gu8  
+INFO  2020-05-31 14:05:32,295 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/datatables/css/dataTables.bootstrap4.min.css?v=F-DaKAClQut87heMIC6oThARMuWne8-WzxIDT7jXuPA  
+INFO  2020-05-31 14:05:32,297 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/datatables/css/buttons.bootstrap4.min.css?v=1O-iXoRdSUgNTj7NzmW-C3dpRaxiGn1afSX-qfRCV4Q  
+INFO  2020-05-31 14:05:32,299 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/datatables/css/responsive.bootstrap4.min.css?v=QrpUliTHPwNNlphA-wNV-zRWVltgDT6Eg0cXVAB04hI  
+INFO  2020-05-31 14:05:32,305 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/admin-lte/dist/css/adminlte.min.css?v=tDEOZyJ9BuKWB-BOSc6dE4cI0uNznodJMx11eWZ7jJ4  
+INFO  2020-05-31 14:05:32,308 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/font-awesome/css/all.min.css?v=-N4_V_SbAFiW1MPBCXnfnP9QSN3-Keu-NlB-0ev_YKQ  
+INFO  2020-05-31 14:05:32,351 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/datatables/css/responsive.bootstrap4.min.css'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\datatables\css\responsive.bootstrap4.min.css'
+INFO  2020-05-31 14:05:32,351 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/icheck-bootstrap/icheck-bootstrap.css'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\icheck-bootstrap\icheck-bootstrap.css'
+INFO  2020-05-31 14:05:32,352 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/datatables/css/buttons.bootstrap4.min.css'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\datatables\css\buttons.bootstrap4.min.css'
+INFO  2020-05-31 14:05:32,353 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/font-awesome/css/all.min.css'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\font-awesome\css\all.min.css'
+INFO  2020-05-31 14:05:32,355 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 58.7455ms 200 text/css
+INFO  2020-05-31 14:05:32,357 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 61.2933ms 200 text/css
+INFO  2020-05-31 14:05:32,351 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/datatables/css/dataTables.bootstrap4.min.css'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\datatables\css\dataTables.bootstrap4.min.css'
+INFO  2020-05-31 14:05:32,358 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/toastr/toastr.css?v=He3QEBKoL_nMXlVsoM7S2C2kjFQqS5L-mgA-F8LpG-U  
+INFO  2020-05-31 14:05:32,360 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 64.0253ms 200 text/css
+INFO  2020-05-31 14:05:32,361 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.min.css?v=D9O-28vCF-qJh2qZSFIXxXc30hTED8RmnKeZRyvVEpA  
+INFO  2020-05-31 14:05:32,363 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/view-resources/Views/Shared/_Layout.css?v=pk1udUQR7bqKUWFxSnrnIl0MM8MH2Wu05p-zpysBQWI  
+INFO  2020-05-31 14:05:32,365 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 59.4285ms 200 text/css
+INFO  2020-05-31 14:05:32,367 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 47.218ms 200 text/css
+INFO  2020-05-31 14:05:32,370 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/toastr/toastr.css'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\toastr\toastr.css'
+INFO  2020-05-31 14:05:32,372 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/_Layout.css'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\view-resources\Views\Shared\_Layout.css'
+INFO  2020-05-31 14:05:32,374 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 15.1441ms 200 text/css
+INFO  2020-05-31 14:05:32,377 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 12.3866ms 200 text/css
+INFO  2020-05-31 14:05:32,379 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/bootstrap/dist/js/bootstrap.bundle.js?v=pVreZ67fRaATygHF6T-gQtF1NI700W9kzeAivu6au9U  
+INFO  2020-05-31 14:05:32,381 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/datatables/js/jquery.dataTables.min.js?v=LXQzPhL1IRyKkA7HpCOBi8I-OC8HqzHUYkjK8S-LKTs  
+INFO  2020-05-31 14:05:32,384 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/css/style.css?v=xKbbeRspeJ53pjKRA3Bh5ZJLItu8Y58wlf6cER1IiIk  
+INFO  2020-05-31 14:05:32,386 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.min.css'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs-ext\famfamfam-flags\dist\sprite\famfamfam-flags.min.css'
+INFO  2020-05-31 14:05:32,388 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/jquery/jquery.js?v=WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU  
+INFO  2020-05-31 14:05:32,392 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 29.4313ms 200 text/css
+INFO  2020-05-31 14:05:32,394 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/style.css'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\css\style.css'
+INFO  2020-05-31 14:05:32,397 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/datatables/js/dataTables.bootstrap4.min.js?v=hJ44ymhBmRPJKIaKRf3DSX5uiFEZ9xB_qx8cNbJvIMU  
+INFO  2020-05-31 14:05:32,399 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/datatables/js/jquery.dataTables.min.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\datatables\js\jquery.dataTables.min.js'
+INFO  2020-05-31 14:05:32,401 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 28.9294ms 200 text/css
+INFO  2020-05-31 14:05:32,403 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 21.7672ms 200 application/javascript
+INFO  2020-05-31 14:05:32,405 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/datatables/js/responsive.bootstrap4.min.js?v=aXVO47Rb7s58FhMTCwbM39en_1XcmzGkClRzBe5txKs  
+INFO  2020-05-31 14:05:32,407 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/datatables/js/dataTables.buttons.js?v=5QXxQoJP_O_KTBOFw8kshfIczGGlmZRcR_WjhFKbiZY  
+INFO  2020-05-31 14:05:32,409 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/datatables/js/dataTables.bootstrap4.min.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\datatables\js\dataTables.bootstrap4.min.js'
+INFO  2020-05-31 14:05:32,410 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/admin-lte/dist/css/adminlte.min.css'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\admin-lte\dist\css\adminlte.min.css'
+INFO  2020-05-31 14:05:32,412 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/datatables/js/responsive.bootstrap4.min.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\datatables\js\responsive.bootstrap4.min.js'
+INFO  2020-05-31 14:05:32,415 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 16.2301ms 200 application/javascript
+INFO  2020-05-31 14:05:32,417 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 11.3384ms 200 application/javascript
+INFO  2020-05-31 14:05:32,419 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/admin-lte/dist/js/adminlte.js?v=qXsDMEfG3xYx1TO9SCGpLfvQPdpKIo0nXVYYfcneIRk  
+INFO  2020-05-31 14:05:32,420 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/block-ui/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc  
+INFO  2020-05-31 14:05:32,423 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/datatables/js/dataTables.buttons.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\datatables\js\dataTables.buttons.js'
+INFO  2020-05-31 14:05:32,424 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 111.2375ms 200 text/css
+INFO  2020-05-31 14:05:32,425 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 19.589ms 200 application/javascript
+INFO  2020-05-31 14:05:32,427 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/datatables/js/dataTables.responsive.min.js?v=7Tbik5KSODuGiOLIOFfhP47p5UK6h1wzw8CFSI_TKhc  
+INFO  2020-05-31 14:05:32,429 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/spin/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0  
+INFO  2020-05-31 14:05:32,431 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/bootstrap/dist/js/bootstrap.bundle.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\bootstrap\dist\js\bootstrap.bundle.js'
+INFO  2020-05-31 14:05:32,434 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/jquery/jquery.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\jquery\jquery.js'
+INFO  2020-05-31 14:05:32,436 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/admin-lte/dist/js/adminlte.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\admin-lte\dist\js\adminlte.js'
+INFO  2020-05-31 14:05:32,438 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/block-ui/jquery.blockUI.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\block-ui\jquery.blockUI.js'
+INFO  2020-05-31 14:05:32,439 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/spin/spin.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\spin\spin.js'
+INFO  2020-05-31 14:05:32,441 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/datatables/js/dataTables.responsive.min.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\datatables\js\dataTables.responsive.min.js'
+INFO  2020-05-31 14:05:32,442 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 22.6555ms 200 application/javascript
+INFO  2020-05-31 14:05:32,444 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 22.2362ms 200 application/javascript
+INFO  2020-05-31 14:05:32,446 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 13.693ms 200 application/javascript
+INFO  2020-05-31 14:05:32,447 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/toastr/toastr.min.js?v=yNbKY1y6h2rbVcQtf0b8lq4a-xpktyFc3pSYoGAY1qQ  
+INFO  2020-05-31 14:05:32,449 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/sweetalert/sweetalert.min.js?v=KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms  
+INFO  2020-05-31 14:05:32,450 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/signalr/dist/browser/signalr.js?v=s5ortbhB2C3h17nHMtXwbCSN9YncRIZH6XrFTSO9vmk  
+INFO  2020-05-31 14:05:32,452 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 16.8091ms 200 application/javascript
+INFO  2020-05-31 14:05:32,454 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 56.1352ms 200 application/javascript
+INFO  2020-05-31 14:05:32,456 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/moment/moment-with-locales.js?v=dgFbqbQVzjkZPQxWd8PBtzGiRBhChc4I2wO_q_s-Xeo  
+INFO  2020-05-31 14:05:32,459 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/datatables/js/buttons.bootstrap4.js?v=7tPJL63hI4QnZbV489_5KEpe7k6W5RzPTZkP8m6kzEE  
+INFO  2020-05-31 14:05:32,460 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/toastr/toastr.min.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\toastr\toastr.min.js'
+INFO  2020-05-31 14:05:32,461 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/sweetalert/sweetalert.min.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\sweetalert\sweetalert.min.js'
+INFO  2020-05-31 14:05:32,464 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 66.5146ms 200 application/javascript
+INFO  2020-05-31 14:05:32,466 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 17.4564ms 200 application/javascript
+INFO  2020-05-31 14:05:32,469 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/datatables/js/buttons.bootstrap4.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\datatables\js\buttons.bootstrap4.js'
+INFO  2020-05-31 14:05:32,471 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=MEOC0fqxBbFCeeJ6VHFuw8-2C710gCRqjbvYcHoBdHU  
+INFO  2020-05-31 14:05:32,473 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 24.7456ms 200 application/javascript
+INFO  2020-05-31 14:05:32,475 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/signalr/dist/browser/signalr.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\signalr\dist\browser\signalr.js'
+INFO  2020-05-31 14:05:32,480 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/abp-web-resources/Abp/Framework/scripts/abp.js?v=3lLIPNQoGBxv9DWxtKwnvHr7Wlov-D0jo-NtjAdTenA  
+INFO  2020-05-31 14:05:32,483 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 33.0414ms 200 application/javascript
+INFO  2020-05-31 14:05:32,485 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 15.4743ms 200 application/javascript
+INFO  2020-05-31 14:05:32,487 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs-ext/spin/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k  
+INFO  2020-05-31 14:05:32,490 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=vMuHbqHh635SKL2RG2qsGGCDyHg1yFeGqhPKpS34g4k  
+INFO  2020-05-31 14:05:32,491 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=i3fsIGh0z3DXDbSa7f6TwsWonuZ8-OwELSrtH1jHbDA  
+INFO  2020-05-31 14:05:32,493 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\libs\abp.jquery.js'
+INFO  2020-05-31 14:05:32,494 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/abp.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\abp.js'
+INFO  2020-05-31 14:05:32,496 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 24.3674ms 200 application/javascript
+INFO  2020-05-31 14:05:32,498 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 21.3596ms 200 application/javascript
+INFO  2020-05-31 14:05:32,500 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=Ta7OYgm62iNXMvVrH3f4y3WqUbGsHGBNvt0Zu0eIKtk  
+INFO  2020-05-31 14:05:32,502 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2020-05-31 14:05:32,504 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=djoKib6ssm5DDzbXLe5pD7ayfFg3siaoEk-BFYzQlvI  
+INFO  2020-05-31 14:05:32,505 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 17.6577ms 200 application/javascript
+INFO  2020-05-31 14:05:32,507 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\libs\abp.toastr.js'
+INFO  2020-05-31 14:05:32,510 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/jquery-validate/jquery.validate.js?v=xLhce0FUawd11QSwrvXSwST0oHhOolNoH9cUXAcsIAg  
+INFO  2020-05-31 14:05:32,512 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\libs\abp.spin.js'
+INFO  2020-05-31 14:05:32,513 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 22.0797ms 200 application/javascript
+INFO  2020-05-31 14:05:32,515 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\libs\abp.sweet-alert.js'
+INFO  2020-05-31 14:05:32,517 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/jquery-validate/jquery.validate.unobtrusive.js?v=XNNC8ESw29iopRLukVRazlP44TxnjGmEQanHJ5kHmtk  
+INFO  2020-05-31 14:05:32,519 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs-ext/spin/jquery.spin.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs-ext\spin\jquery.spin.js'
+INFO  2020-05-31 14:05:32,521 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 17.5065ms 200 application/javascript
+INFO  2020-05-31 14:05:32,523 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 12.6863ms 200 application/javascript
+INFO  2020-05-31 14:05:32,525 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/jquery-validate/jquery.validate.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\jquery-validate\jquery.validate.js'
+INFO  2020-05-31 14:05:32,528 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/push.js/push.js?v=p73-snCYhrDo9U6USD9P19LnY1EwAe4-VzQxj_kNyBE  
+INFO  2020-05-31 14:05:32,530 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/js/abp.dataTable.js?v=u71MQ1fgWxc3lB4E3aYdfIwFKj2I1uln1LeLVYthrLw  
+INFO  2020-05-31 14:05:32,532 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/jquery-validate/jquery.validate.unobtrusive.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\jquery-validate\jquery.validate.unobtrusive.js'
+INFO  2020-05-31 14:05:32,534 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 19.3653ms 200 application/javascript
+INFO  2020-05-31 14:05:32,536 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 19.3426ms 200 application/javascript
+INFO  2020-05-31 14:05:32,538 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/js/main.js?v=wRwidwF5LWkNixKxyJ83DWfXnYmfWfn_VoM8atTDKTM  
+INFO  2020-05-31 14:05:32,539 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637265307184503634  
+INFO  2020-05-31 14:05:32,541 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/push.js/push.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\push.js\push.js'
+INFO  2020-05-31 14:05:32,543 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/abp.dataTable.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\js\abp.dataTable.js'
+INFO  2020-05-31 14:05:32,545 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/main.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\js\main.js'
+INFO  2020-05-31 14:05:32,546 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/moment/moment-with-locales.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\moment\moment-with-locales.js'
+INFO  2020-05-31 14:05:32,547 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 21.8683ms 200 application/javascript
+INFO  2020-05-31 14:05:32,549 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 22.4211ms 200 application/javascript
+INFO  2020-05-31 14:05:32,551 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10.5523ms 200 application/javascript
+INFO  2020-05-31 14:05:32,552 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/view-resources/Views/Home/Index.js?v=K0D6HsrS69XXLRtWKoTtWGYinGZNmmZF6gpiRobQkK4  
+INFO  2020-05-31 14:05:32,554 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/chartjs/dist/Chart.js?v=nZaxPHA2uAaquixjSDX19TmIlbRNCOrf5HO1oHl5p70  
+INFO  2020-05-31 14:05:32,555 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/font-awesome/webfonts/fa-solid-900.woff2  
+INFO  2020-05-31 14:05:32,557 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 94.0867ms 200 application/javascript
+INFO  2020-05-31 14:05:32,559 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 54.656ms 200 application/javascript
+INFO  2020-05-31 14:05:32,560 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637265307184503634  
+INFO  2020-05-31 14:05:32,562 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js?v=7OzpM5utNWYP8ne_218zbUCD3Xj_R1GqM6AzwpgQktg  
+INFO  2020-05-31 14:05:32,565 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Home/Index.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\view-resources\Views\Home\Index.js'
+INFO  2020-05-31 14:05:32,570 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 16.2842ms 200 application/javascript
+INFO  2020-05-31 14:05:32,571 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\libs\abp.signalr-client.js'
+INFO  2020-05-31 14:05:32,573 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs/admin-lte/dist/img/avatar5.png  
+INFO  2020-05-31 14:05:32,575 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/font-awesome/webfonts/fa-solid-900.woff2'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\font-awesome\webfonts\fa-solid-900.woff2'
+INFO  2020-05-31 14:05:32,577 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 11.6584ms 200 application/javascript
+INFO  2020-05-31 14:05:32,578 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 24.1324ms 200 font/woff2
+INFO  2020-05-31 14:05:32,580 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/img/logo.png  
+INFO  2020-05-31 14:05:32,586 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/admin-lte/dist/img/avatar5.png'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\admin-lte\dist\img\avatar5.png'
+INFO  2020-05-31 14:05:32,588 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2020-05-31 14:05:32,590 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/img/logo.png'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\img\logo.png'
+INFO  2020-05-31 14:05:32,592 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 17.2408ms 200 image/png
+INFO  2020-05-31 14:05:32,594 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 12.9535ms 200 image/png
+INFO  2020-05-31 14:05:32,598 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.png'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs-ext\famfamfam-flags\dist\sprite\famfamfam-flags.png'
+INFO  2020-05-31 14:05:32,603 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 18.6643ms 200 image/png
+INFO  2020-05-31 14:05:32,604 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2020-05-31 14:05:32,606 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2020-05-31 14:05:32,608 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/chartjs/dist/Chart.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\chartjs\dist\Chart.js'
+INFO  2020-05-31 14:05:32,610 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 58.5371ms 200 application/javascript
+INFO  2020-05-31 14:05:32,633 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2020-05-31 14:05:32,637 [10   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2020-05-31 14:05:32,743 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2020-05-31 14:05:32,753 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2020-05-31 14:05:32,793 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2020-05-31 14:05:32,795 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 52.8833ms 200 application/json
+INFO  2020-05-31 14:05:32,805 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=_RgIcYsjWztnzNG1ABiczw  
+INFO  2020-05-31 14:05:32,810 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2020-05-31 14:05:32,858 [10   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2020-05-31 14:05:32,860 [10   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 221.8454ms
+INFO  2020-05-31 14:05:32,862 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2020-05-31 14:05:32,864 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 325.8955ms 200 application/x-javascript
+WARN  2020-05-31 14:05:32,878 [16   ] naries.DictionaryBasedLocalizationSource - Can not find 'CovidCases' in localization source 'Covid19Admin'!
+WARN  2020-05-31 14:05:32,878 [16   ] naries.DictionaryBasedLocalizationSource - Can not find 'EnvironmentFactors' in localization source 'Covid19Admin'!
+DEBUG 2020-05-31 14:05:32,948 [10   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"_RgIcYsjWztnzNG1ABiczw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2020-05-31T14:05:32.9336179-04:00","Properties":{}}
+DEBUG 2020-05-31 14:05:32,985 [10   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: _RgIcYsjWztnzNG1ABiczw
+INFO  2020-05-31 14:05:33,046 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2020-05-31 14:05:33,048 [6    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 413.4865ms
+INFO  2020-05-31 14:05:33,050 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2020-05-31 14:05:33,052 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 492.5749ms 200 application/x-javascript; charset=utf-8
+INFO  2020-05-31 14:05:33,090 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:5000/img/favicon.ico  
+INFO  2020-05-31 14:05:33,093 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/img/favicon.ico'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\img\favicon.ico'
+INFO  2020-05-31 14:05:33,094 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3.8315ms 200 image/x-icon
+DEBUG 2020-05-31 14:05:43,294 [13   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: _RgIcYsjWztnzNG1ABiczw
+INFO  2020-05-31 14:05:43,304 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2020-05-31 14:05:43,307 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10501.3226ms 101 
+DEBUG 2020-05-31 14:05:59,814 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-05-31 14:05:59,896 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-05-31 14:05:59,913 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Web.Startup.Covid19AdminWebMvcModule, DeploySolutions.Covid19Admin.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,915 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminWebCoreModule, DeploySolutions.Covid19Admin.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,915 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminApplicationModule, DeploySolutions.Covid19Admin.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,915 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminCoreModule, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,918 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.EntityFrameworkCore.Covid19AdminEntityFrameworkModule, DeploySolutions.Covid19Admin.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,918 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,918 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,918 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,919 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:05:59,921 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-05-31 14:05:59,995 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:05:59,995 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:05:59,995 [1    ] o.Configuration.LanguageManagementConfig - Converted Covid19Admin (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:05:59,995 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:06:00,425 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: DeploySolutions.Covid19Admin.EntityFrameworkCore.Covid19AdminDbContext, DeploySolutions.Covid19Admin.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:06:01,309 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-05-31 14:06:01,397 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-05-31 14:06:01,413 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-05-31 14:06:01,421 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Covid19Admin
+DEBUG 2020-05-31 14:06:01,428 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-05-31 14:06:01,612 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-05-31 14:06:01,724 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[DeploySolutions.Covid19Admin.MultiTenancy.Tenant, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DeploySolutions.Covid19Admin.Authorization.Users.User, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-05-31 14:06:01,863 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2020-05-31 14:06:01,864 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-05-31 14:06:01,871 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Users.Dto.CreateUserDto
+DEBUG 2020-05-31 14:06:01,872 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Users.Dto.UserDto
+DEBUG 2020-05-31 14:06:01,872 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-05-31 14:06:01,872 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-05-31 14:06:01,873 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Roles.Dto.PermissionDto
+DEBUG 2020-05-31 14:06:01,873 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-05-31 14:06:01,873 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.MultiTenancy.Dto.TenantDto
+DEBUG 2020-05-31 14:06:01,873 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Covid19.Dto.CovidCaseListDto
+DEBUG 2020-05-31 14:06:01,873 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Covid19.Dto.EnvironmentFactorListDto
+DEBUG 2020-05-31 14:06:01,873 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2020-05-31 14:06:01,873 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Web.Models.Roles.EditRoleModalViewModel
+INFO  2020-05-31 14:06:10,687 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2020-05-31 14:06:11,340 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-05-31 14:06:11,838 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2020-05-31 14:06:11,839 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2020-05-31 14:06:11,911 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 68.2627ms 200 
+INFO  2020-05-31 14:06:15,150 [4    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2020-05-31 14:06:15,153 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc)'
+INFO  2020-05-31 14:06:15,402 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller DeploySolutions.Covid19Admin.Web.Controllers.HomeController (DeploySolutions.Covid19Admin.Web.Mvc).
+INFO  2020-05-31 14:06:15,879 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2020-05-31 14:06:17,695 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'CovidCases' in localization source 'Covid19Admin'!
+WARN  2020-05-31 14:06:17,697 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'EnvironmentFactors' in localization source 'Covid19Admin'!
+INFO  2020-05-31 14:06:18,564 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 2738.9442ms.
+INFO  2020-05-31 14:06:18,570 [6    ] c.Infrastructure.ControllerActionInvoker - Executed action DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc) in 3165.5321ms
+INFO  2020-05-31 14:06:18,573 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc)'
+INFO  2020-05-31 14:06:18,587 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6754.1191ms 200 text/html; charset=utf-8
+INFO  2020-05-31 14:06:18,708 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637265307617260359  
+INFO  2020-05-31 14:06:18,712 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637265307617260359  
+INFO  2020-05-31 14:06:18,717 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/libs/admin-lte/dist/img/avatar5.png  
+INFO  2020-05-31 14:06:18,718 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/img/logo.png  
+INFO  2020-05-31 14:06:18,741 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2020-05-31 14:06:18,742 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2020-05-31 14:06:18,764 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/img/logo.png'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\img\logo.png'
+INFO  2020-05-31 14:06:18,764 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/admin-lte/dist/img/avatar5.png'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\admin-lte\dist\img\avatar5.png'
+INFO  2020-05-31 14:06:18,766 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 50.8356ms 200 image/png
+INFO  2020-05-31 14:06:18,768 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 50.8346ms 200 image/png
+INFO  2020-05-31 14:06:18,771 [13   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2020-05-31 14:06:18,775 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2020-05-31 14:06:18,818 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2020-05-31 14:06:18,820 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/libs/font-awesome/webfonts/fa-solid-900.woff2  
+INFO  2020-05-31 14:06:18,829 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/font-awesome/webfonts/fa-solid-900.woff2'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\font-awesome\webfonts\fa-solid-900.woff2'
+INFO  2020-05-31 14:06:18,831 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.png'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs-ext\famfamfam-flags\dist\sprite\famfamfam-flags.png'
+INFO  2020-05-31 14:06:18,835 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 14.3585ms 200 font/woff2
+INFO  2020-05-31 14:06:18,840 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 18.4849ms 200 image/png
+INFO  2020-05-31 14:06:18,854 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2020-05-31 14:06:18,863 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2020-05-31 14:06:18,925 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2020-05-31 14:06:18,927 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 72.8053ms 200 application/json
+INFO  2020-05-31 14:06:18,938 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=Y4qz4OXcYR_iJf5gxahdvw  
+INFO  2020-05-31 14:06:18,945 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2020-05-31 14:06:19,015 [8    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2020-05-31 14:06:19,018 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 240.827ms
+INFO  2020-05-31 14:06:19,019 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2020-05-31 14:06:19,021 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 313.4714ms 200 application/x-javascript
+WARN  2020-05-31 14:06:19,048 [13   ] naries.DictionaryBasedLocalizationSource - Can not find 'CovidCases' in localization source 'Covid19Admin'!
+WARN  2020-05-31 14:06:19,048 [13   ] naries.DictionaryBasedLocalizationSource - Can not find 'EnvironmentFactors' in localization source 'Covid19Admin'!
+DEBUG 2020-05-31 14:06:19,070 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"Y4qz4OXcYR_iJf5gxahdvw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2020-05-31T14:06:19.055069-04:00","Properties":{}}
+DEBUG 2020-05-31 14:06:19,109 [9    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: Y4qz4OXcYR_iJf5gxahdvw
+INFO  2020-05-31 14:06:19,217 [5    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2020-05-31 14:06:19,219 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 447.0882ms
+INFO  2020-05-31 14:06:19,221 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2020-05-31 14:06:19,223 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 511.9329ms 200 application/x-javascript; charset=utf-8
+INFO  2020-05-31 14:07:31,685 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+DEBUG 2020-05-31 14:07:31,685 [22   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: Y4qz4OXcYR_iJf5gxahdvw
+INFO  2020-05-31 14:07:31,692 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2020-05-31 14:07:31,694 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2020-05-31 14:07:31,696 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 12.1521ms 200 application/json
+INFO  2020-05-31 14:07:31,700 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2020-05-31 14:07:31,702 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 72763.9613ms 101 
+INFO  2020-05-31 14:07:31,706 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=T7KYfUXkuztpQKvmXGzQPQ  
+INFO  2020-05-31 14:07:31,711 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2020-05-31 14:07:31,715 [27   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"T7KYfUXkuztpQKvmXGzQPQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2020-05-31T14:07:31.715299-04:00","Properties":{}}
+INFO  2020-05-31 14:07:31,813 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/api/services/app/environmentfactor/GetAll  
+INFO  2020-05-31 14:07:31,819 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'DeploySolutions.Covid19Admin.Covid19.EnvironmentFactorAppService.GetAll (DeploySolutions.Covid19Admin.Application)'
+INFO  2020-05-31 14:07:31,825 [10   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "EnvironmentFactor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.ListResultDto`1[DeploySolutions.Covid19Admin.Covid19.Dto.EnvironmentFactorListDto]] GetAll(DeploySolutions.Covid19Admin.Covid19.Dto.GetAllEnvironmentFactorsInput) on controller DeploySolutions.Covid19Admin.Covid19.EnvironmentFactorAppService (DeploySolutions.Covid19Admin.Application).
+ERROR 2020-05-31 14:08:01,047 [30   ] Mvc.ExceptionHandling.AbpExceptionFilter - Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[DeploySolutions.Covid19Admin.Covid19.EnvironmentFactor, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[DeploySolutions.Covid19Admin.Covid19.Dto.EnvironmentFactorListDto, DeploySolutions.Covid19Admin.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[DeploySolutions.Covid19Admin.Covid19.EnvironmentFactor, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[DeploySolutions.Covid19Admin.Covid19.Dto.EnvironmentFactorListDto, DeploySolutions.Covid19Admin.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+EnvironmentFactor -> EnvironmentFactorListDto
+DeploySolutions.Covid19Admin.Covid19.EnvironmentFactor -> DeploySolutions.Covid19Admin.Covid19.Dto.EnvironmentFactorListDto
+   at lambda_method(Closure , EnvironmentFactor , EnvironmentFactorListDto , ResolutionContext )
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at Abp.AutoMapper.AutoMapperObjectMapper.Map[TDestination](Object source)
+   at DeploySolutions.Covid19Admin.Covid19.EnvironmentFactorAppService.GetAll(GetAllEnvironmentFactorsInput input) in F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Application\Covid19\EnvironmentFactorAppService.cs:line 24
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2020-05-31 14:08:01,069 [30   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-05-31 14:08:01,103 [30   ] c.Infrastructure.ControllerActionInvoker - Executed action DeploySolutions.Covid19Admin.Covid19.EnvironmentFactorAppService.GetAll (DeploySolutions.Covid19Admin.Application) in 29275.8394ms
+INFO  2020-05-31 14:08:01,104 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'DeploySolutions.Covid19Admin.Covid19.EnvironmentFactorAppService.GetAll (DeploySolutions.Covid19Admin.Application)'
+INFO  2020-05-31 14:08:01,106 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 29292.9867ms 500 application/json; charset=utf-8
+DEBUG 2020-05-31 14:08:01,112 [25   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: T7KYfUXkuztpQKvmXGzQPQ
+INFO  2020-05-31 14:08:01,114 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2020-05-31 14:08:01,116 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 29409.7871ms 101 
+DEBUG 2020-05-31 14:18:02,369 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-05-31 14:18:02,451 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-05-31 14:18:02,467 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Web.Startup.Covid19AdminWebMvcModule, DeploySolutions.Covid19Admin.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminWebCoreModule, DeploySolutions.Covid19Admin.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminApplicationModule, DeploySolutions.Covid19Admin.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,471 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.Covid19AdminCoreModule, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,471 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,474 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DeploySolutions.Covid19Admin.EntityFrameworkCore.Covid19AdminEntityFrameworkModule, DeploySolutions.Covid19Admin.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,474 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,474 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,475 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,475 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.8.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:02,479 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-05-31 14:18:02,554 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:18:02,555 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:18:02,555 [1    ] o.Configuration.LanguageManagementConfig - Converted Covid19Admin (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:18:02,555 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-05-31 14:18:02,979 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: DeploySolutions.Covid19Admin.EntityFrameworkCore.Covid19AdminDbContext, DeploySolutions.Covid19Admin.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-05-31 14:18:03,861 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-05-31 14:18:03,947 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-05-31 14:18:03,963 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-05-31 14:18:03,969 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Covid19Admin
+DEBUG 2020-05-31 14:18:03,977 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-05-31 14:18:04,164 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-05-31 14:18:04,273 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[DeploySolutions.Covid19Admin.MultiTenancy.Tenant, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DeploySolutions.Covid19Admin.Authorization.Users.User, DeploySolutions.Covid19Admin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-05-31 14:18:04,413 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2020-05-31 14:18:04,413 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-05-31 14:18:04,421 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Users.Dto.CreateUserDto
+DEBUG 2020-05-31 14:18:04,421 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Users.Dto.UserDto
+DEBUG 2020-05-31 14:18:04,422 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-05-31 14:18:04,422 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-05-31 14:18:04,422 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Roles.Dto.PermissionDto
+DEBUG 2020-05-31 14:18:04,422 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-05-31 14:18:04,422 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.MultiTenancy.Dto.TenantDto
+DEBUG 2020-05-31 14:18:04,422 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Covid19.Dto.CovidCaseListDto
+DEBUG 2020-05-31 14:18:04,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Covid19.Dto.EnvironmentFactorListDto
+DEBUG 2020-05-31 14:18:04,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2020-05-31 14:18:04,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DeploySolutions.Covid19Admin.Web.Models.Roles.EditRoleModalViewModel
+INFO  2020-05-31 14:18:09,049 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2020-05-31 14:18:09,737 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-05-31 14:18:10,105 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2020-05-31 14:18:10,106 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 DEBUG http://localhost:62114/  0
+INFO  2020-05-31 14:18:10,183 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 72.2861ms 200 
+INFO  2020-05-31 14:18:13,501 [8    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2020-05-31 14:18:13,504 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc)'
+INFO  2020-05-31 14:18:13,757 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller DeploySolutions.Covid19Admin.Web.Controllers.HomeController (DeploySolutions.Covid19Admin.Web.Mvc).
+INFO  2020-05-31 14:18:14,198 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2020-05-31 14:18:16,053 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'CovidCases' in localization source 'Covid19Admin'!
+WARN  2020-05-31 14:18:16,055 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'EnvironmentFactors' in localization source 'Covid19Admin'!
+INFO  2020-05-31 14:18:16,903 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 2763.4316ms.
+INFO  2020-05-31 14:18:16,910 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc) in 3149.6264ms
+INFO  2020-05-31 14:18:16,912 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'DeploySolutions.Covid19Admin.Web.Controllers.HomeController.Index (DeploySolutions.Covid19Admin.Web.Mvc)'
+INFO  2020-05-31 14:18:16,922 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6823.7186ms 200 text/html; charset=utf-8
+INFO  2020-05-31 14:18:17,044 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=vMuHbqHh635SKL2RG2qsGGCDyHg1yFeGqhPKpS34g4k  
+INFO  2020-05-31 14:18:17,048 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637265314842750223  
+INFO  2020-05-31 14:18:17,050 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637265314842750223  
+INFO  2020-05-31 14:18:17,074 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2020-05-31 14:18:17,076 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2020-05-31 14:18:17,094 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'F:\Dev\Deploy\Hacks\hackathon-spaceapps-covid-19\admin\aspnet-core\src\DeploySolutions.Covid19Admin.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2020-05-31 14:18:17,096 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 52.6923ms 200 application/javascript
+INFO  2020-05-31 14:18:17,100 [10   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2020-05-31 14:18:17,105 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2020-05-31 14:18:17,177 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2020-05-31 14:18:17,188 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2020-05-31 14:18:17,224 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2020-05-31 14:18:17,226 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 48.7839ms 200 application/json
+INFO  2020-05-31 14:18:17,232 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=JoOaAX-IXu5AVGWoycWojg  
+INFO  2020-05-31 14:18:17,238 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2020-05-31 14:18:17,302 [8    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2020-05-31 14:18:17,306 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 198.4641ms
+INFO  2020-05-31 14:18:17,308 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2020-05-31 14:18:17,309 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 261.4745ms 200 application/x-javascript
+WARN  2020-05-31 14:18:17,330 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'CovidCases' in localization source 'Covid19Admin'!
+WARN  2020-05-31 14:18:17,330 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'EnvironmentFactors' in localization source 'Covid19Admin'!
+DEBUG 2020-05-31 14:18:17,362 [12   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"JoOaAX-IXu5AVGWoycWojg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2020-05-31T14:18:17.3467859-04:00","Properties":{}}
+DEBUG 2020-05-31 14:18:17,401 [12   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: JoOaAX-IXu5AVGWoycWojg
+INFO  2020-05-31 14:18:17,484 [5    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2020-05-31 14:18:17,487 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 384.1855ms
+INFO  2020-05-31 14:18:17,489 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2020-05-31 14:18:17,490 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 442.5317ms 200 application/x-javascript; charset=utf-8
+DEBUG 2020-05-31 14:18:22,559 [8    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: JoOaAX-IXu5AVGWoycWojg
+INFO  2020-05-31 14:18:22,565 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2020-05-31 14:18:22,571 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2020-05-31 14:18:22,573 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5340.8101ms 101 
+INFO  2020-05-31 14:18:22,575 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2020-05-31 14:18:22,577 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2020-05-31 14:18:22,579 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 14.5311ms 200 application/json
+INFO  2020-05-31 14:18:22,594 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=vHVQkr8xnyKkWtd6bJQ4wA  
+INFO  2020-05-31 14:18:22,598 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2020-05-31 14:18:22,604 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"vHVQkr8xnyKkWtd6bJQ4wA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2020-05-31T14:18:22.6043879-04:00","Properties":{}}
+INFO  2020-05-31 14:18:22,674 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/api/services/app/environmentfactor/GetAll  
+INFO  2020-05-31 14:18:22,680 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'DeploySolutions.Covid19Admin.Covid19.EnvironmentFactorAppService.GetAll (DeploySolutions.Covid19Admin.Application)'
+INFO  2020-05-31 14:18:22,687 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "EnvironmentFactor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.ListResultDto`1[DeploySolutions.Covid19Admin.Covid19.Dto.EnvironmentFactorListDto]] GetAll(DeploySolutions.Covid19Admin.Covid19.Dto.GetAllEnvironmentFactorsInput) on controller DeploySolutions.Covid19Admin.Covid19.EnvironmentFactorAppService (DeploySolutions.Covid19Admin.Application).
+INFO  2020-05-31 14:18:33,668 [5    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-05-31 14:18:33,711 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action DeploySolutions.Covid19Admin.Covid19.EnvironmentFactorAppService.GetAll (DeploySolutions.Covid19Admin.Application) in 11022.5587ms
+INFO  2020-05-31 14:18:33,713 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'DeploySolutions.Covid19Admin.Covid19.EnvironmentFactorAppService.GetAll (DeploySolutions.Covid19Admin.Application)'
+INFO  2020-05-31 14:18:33,714 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 11040.5883ms 200 application/json; charset=utf-8
+DEBUG 2020-05-31 14:18:33,720 [8    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: vHVQkr8xnyKkWtd6bJQ4wA
+INFO  2020-05-31 14:18:33,722 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2020-05-31 14:18:33,723 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 11129.8047ms 101 
