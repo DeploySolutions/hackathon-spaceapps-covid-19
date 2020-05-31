@@ -1,0 +1,255 @@
+/* GENERAL */
+/* -------------------------------------------------------------------------------- */
+*, *:before, *:after {
+    box-sizing: inherit;
+    text-shadow: none !important;
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width:  8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+::-webkit-scrollbar-track {
+    background: var(--color-transparent);
+}
+
+
+/* TAGS */
+/* -------------------------------------------------------------------------------- */
+html {
+    box-sizing: border-box;
+    /*box-sizing: content-box;*/
+    -webkit-font-smoothing: antialiased; 
+    -webkit-tap-highlight-color: gray;
+    -webkit-text-size-adjust: none; 
+}
+
+html, body {
+    background: var( --color-bluegrey-800);
+    color: var(--color-white);
+
+    font-family: var(--font-family);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+    
+    -webkit-font-smoothing: antialiased; /* Crisper fonts */
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: 100%; /* Disable auto-enlargement of small text in Safari */
+    text-rendering: optimizeLegibility; /* Enable kerning and optional ligatures */
+
+    min-height: 767px;
+    min-width: 1024px;
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+
+    scrollbar-face-color: var(--color-primary);;
+    scrollbar-track-color: var(--color-transparent);   
+}
+
+h2 {
+    font-size: var(--font-size-21);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    cursor: pointer;
+    background: var(--color-bluegrey-700);
+    border-top: 1px solid var(--color-bluegrey-600);
+    padding: var(--spacing-20);
+}
+li.selected,
+li:hover {
+    background: var(--color-bluegrey-600);
+}
+ul.withSvg li {
+    display: flex;
+    flex-direction: row;
+}
+ul.withSvg li svg {
+    display: block;
+}
+
+
+
+/* APP */
+/* -------------------------------------------------------------------------------- */
+.app {
+    display: grid;
+    grid-template-rows: 80px auto;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* HEADER */
+/* -------------------------------------------------------------------------------- */
+header {
+    background: var(--color-transparent);
+    display: flex;
+    flex-direction: row;
+    padding: var(--spacing-20) var(--spacing-20) 0 var(--spacing-20);
+    position: relative;
+}
+header div {
+    font-size: var(--font-size-24);
+    line-height: 32px;
+    margin-left: var(--spacing-8);
+}
+
+header .info {
+    cursor: pointer;
+    fill: var(--color-bluegrey-600);
+    height: 32px;
+    position: absolute;
+    right: var(--spacing-20);
+    top: var(--spacing-24);
+    width: 32px;
+}
+header .info:hover {
+    fill: var(--color-primary);
+}
+
+
+/* LAYOUT */
+/* -------------------------------------------------------------------------------- */
+main {
+	position: relative;
+}
+
+
+/* ASIDE */
+/* -------------------------------------------------------------------------------- */
+main aside {
+    background: var( --color-bluegrey-750);
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    width: 300px;
+}
+main aside .aside-con {
+    padding: var(--spacing-20);
+    position: relative;
+}
+
+main aside section {
+    margin-bottom:  var(--spacing-20);
+    position: relative;
+}
+main aside section:last-child {
+    margin-bottom: 0;
+}
+
+main aside .title {
+    display: flex;
+    margin-bottom: var(--spacing-20);
+
+}
+main aside .title h2 {
+    margin-right: var(--spacing-8);
+
+}
+main aside .title svg {
+    cursor: pointer;
+    fill: var(--color-bluegrey-600);
+    height: 20px;
+    width: 20px;
+}
+main aside .title svg:hover {
+    fill: var(--color-primary);
+}
+
+main aside section .graph {
+    background: var(--color-bluegrey-700);
+    border-bottom: var(--spacing-4) solid var(--color-bluegrey-750);
+    position: relative;
+}
+main aside section .graph .title {
+    position: absolute;
+    right: var(--spacing-8);
+    top: var(--spacing-8);
+    text-transform: uppercase;    
+}
+main aside section .graph img {
+    width: 100%;
+}
+
+main aside section .slider img {
+    background: var(--color-bluegrey-600);
+    width: 100%;
+}
+
+.withSvg svg{
+    margin: 0 15px 0 0;
+}
+
+/* MAP */
+/* -------------------------------------------------------------------------------- */
+main .map {
+    bottom: 0;
+    left: 300px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+main .map img {
+    width: 100%;
+}
+main .map .slider {
+    bottom: var(--spacing-40);
+    left: 0;
+    margin: 0 auto;
+    position: absolute; 
+    right: 0;
+    width: 495px;
+}
+main .map .slider img {
+    background: var(--color-bluegrey-600);
+    width: 100%;
+}
+
+main .map .dot {
+    background: var(--color-primary);
+    border-radius: 50%;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+
+main .map .dot.dot1 {
+    left: 10%;
+    height: 60px;
+    bottom: 33%;
+    width: 60px;
+}
+
+main .map .dot.dot2 {
+    left: 500px;
+    height: 40px;
+    top: 300px;
+    width: 40px;
+}
+
+main .map .dot.dot3 {
+    height: 80px;
+    right: 400px;
+    top: 200px;
+    width: 80px;
+}

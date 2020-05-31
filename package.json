@@ -1,0 +1,22 @@
+{
+  "name": "hackathon-spaceapps-covid-19",
+  "version": "1.0.0",
+  "description": "COVID-19 hackathon special edition for Space Apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickKellett/hackathon-spaceapps-covid-19.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickKellett/hackathon-spaceapps-covid-19/issues"
+  },
+  "homepage": "https://github.com/NickKellett/hackathon-spaceapps-covid-19#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
