@@ -8,9 +8,26 @@
         <link rel="stylesheet" href="variables.css">
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600;800&display=swap" rel="stylesheet">
+        <!-- Map Box Resources -->
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css' rel='stylesheet' />
+
+        <script src="./scripts/modal-info.js"></script>
     </head>
     <body>
+        <button id="myBtn" style="display: none"></button>
         <div class="app">
+            <!-- Trigger/Open The Modal -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="innerModal"></div>
+        </div>
+
+        </div>
             <header>
                 <svg width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter x="-21.9%" y="-15.6%" width="143.8%" height="143.8%" filterUnits="objectBoundingBox" id="a"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/></filter><filter x="-31.8%" y="-22.7%" width="163.6%" height="163.6%" filterUnits="objectBoundingBox" id="c"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/></filter><filter x="-58.3%" y="-41.7%" width="216.7%" height="216.7%" filterUnits="objectBoundingBox" id="e"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/></filter><circle id="b" cx="36" cy="16" r="16"/><circle id="d" cx="19" cy="16" r="11"/><circle id="f" cx="6" cy="16" r="6"/></defs><g fill="none" fill-rule="evenodd"><g transform="translate(4 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="#880E4F" xlink:href="#b"/></g><g transform="translate(4 2)"><use fill="#000" filter="url(#c)" xlink:href="#d"/><use fill="#C2185B" xlink:href="#d"/></g><g transform="translate(4 2)"><use fill="#000" filter="url(#e)" xlink:href="#f"/><use fill="#F06292" xlink:href="#f"/></g></g></svg>
                 <div>Night Moves</div>
@@ -83,17 +100,17 @@
                 </aside>
 
                 <!-- MAP -->
-                <section class="map">
-                    <div class="dot dot1"></div>
+                <div id="map-container" class="map">
+                    <!-- <div class="dot dot1"></div>
                     <div class="dot dot2"></div>
-                    <div class="dot dot3"></div>
+                    <div class="dot dot3"></div> -->
 
-                    <img src="./img/map.png">
+                    <!-- <img src="./img/map.png"> -->
 
-                    <div class="slider">
+                    <!-- <div class="slider">
                         <img src="./img/slider.png">
-                    </div>
-                </section>
+                    </div> -->
+                </div>
             </main>
         </div>
 
@@ -101,10 +118,39 @@
 		<script>
             $(document).ready(function() {
                 console.log("jquery ready");
+             
+                // Get the modal
+                var modal = document.getElementById("myModal");
+    
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+    
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+    
+                // When the user clicks the button, open the modal 
+                btn.onclick = function() {
+                modal.style.display = "block";
+                }
+    
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                modal.style.display = "none";
+                }
+    
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            });
 
-                $(document).on("click", '.info', function(e, ele){
-                    alert("TOOLTIP HERE");
-                });                
+
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYWRhbWpzaW0iLCJhIjoiY2thdmF0Ym9kMGNhbTJ6a3l5dzl3ZmdrcCJ9.YcSMrFRPTc7hCZgYkJeoSQ';
+                var map = new mapboxgl.Map({
+                container: 'map-container',
+                style: 'mapbox://styles/mapbox/streets-v9'
             });
         </script>
     </body>

@@ -28,7 +28,8 @@ namespace DeploySolutions.Covid19Admin.Covid19
         [Required]
         public decimal Long { get; set; }
 
-        public decimal PatientAge { get; set; }
+        [StringLength(MaxTextLength)]
+        public string PatientAge { get; set; }
 
         public string PatientGender { get; set; }
 
