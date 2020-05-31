@@ -1,0 +1,14 @@
+version: '3'
+services:
+  fetch_laads:
+    build: .
+    command: python -u /usr/src/fetch_and_process_LAADS.py
+    # command: tail -f /usr/src/queries/test.csv
+    volumes:
+      - ./src:/usr/src
+    environment: 
+        - LAADS_CSV_FOLDER=/usr/src/queries
+        - LAADS_BASE_DOWNLOAD_URL=https://ladsweb.modaps.eosdis.nasa.gov
+        - TARGET_DIRECTORY=/usr/src/downloaded
+        - API_KEY=4FCD2DE2-A2FD-11EA-8090-EA5D4723ACD5
+    tty: true
