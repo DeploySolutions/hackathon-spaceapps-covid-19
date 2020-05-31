@@ -4,7 +4,7 @@ from tqdm import tqdm
 from pathlib import Path
 import requests
 import gdal
-
+from datetime import datetime
 
 
 def build_queries(query_folder, base_url):
@@ -32,11 +32,23 @@ def process(queries, target_dir, api_key):
     # create the target download folder if it does not exist
     Path(target_dir).mkdir(parents=True, exist_ok=True)
 
+    # write the mapping between date, url, hd5, tiff
+    all_files_filename = os.path.join(target_dir,"all_summary.csv")
+    with open(all_files_filename,'w') as file:
+        file.write("date, url, hdf5_filename, geotiff_filename")
+        file.write('\n')
+
     # iterate throught the files
     for collection in queries:
         # make a subfolder for this collection
         collection_target_dir = os.path.join(target_dir,collection)
         Path(collection_target_dir).mkdir(parents=True, exist_ok=True)
+
+        # make a summary file for this collection
+        query_files_filename = os.path.join(collection_target_dir, "query_summary.csv")
+        with open(query_files_filename,'w') as file:
+            file.write("date, url, hdf5_filename, geotiff_filename")
+            file.write('\n')
 
         # download each file into that subfolder
         for url in queries[collection]:
@@ -61,7 +73,16 @@ def process(queries, target_dir, api_key):
                 t.close()
 
             # attempt to convert to geotiff, whether skipped or downloaded
-            convert_to_geotiff(hdf_filename, collection_target_dir)
+            geotiff_filename, acquisition_date = convert_to_geotiff(hdf_filename, collection_target_dir)
+
+            # save info to the two summary files
+            with open(all_files_filename,'a') as file:
+                file.write(f"{acquisition_date}, {url}, {hdf_filename}, {geotiff_filename}")
+                file.write('\n')
+            with open(query_files_filename,'a') as file:
+                file.write(f"{acquisition_date}, {url}, {hdf_filename}, {geotiff_filename}")
+                file.write('\n')                        
+
 
 
 def convert_to_geotiff(input_filename, output_dir):
@@ -85,21 +106,30 @@ def convert_to_geotiff(input_filename, output_dir):
     rlayer = gdal.Open(subhdflayer, gdal.GA_ReadOnly)
     #outputName = rlayer.GetMetadata_Dict()['long_name']
 
+    # save the acquisition time for later use
+    image_start_time = rlayer.GetMetadata()['StartTime']
+
     #Subset the Long Name
     outputName = subhdflayer[92:]
 
+    # remove the original filename and colon
+    outputName = outputName[outputName.find(':')+1:]
+
+    # add the acquisition time
+    outputName = image_start_time + outputName
+
+    # do remaining filename cleanup
     outputNameNoSpace = outputName.strip().replace(" ","_").replace("/","_")
     outputNameFinal = outputNameNoSpace + os.path.basename(rasterFilePre) + fileExtension
-    # print(outputNameFinal)
 
-   # skip if the geotiff file already exists
+    # add the full path
+    outputRaster = os.path.join(output_dir, outputNameFinal)
+
+    # skip if the geotiff file already exists
     geotiff_file = Path(os.path.join(output_dir, outputNameFinal))
     if geotiff_file.is_file():
         print(f"Skipping conversion for {input_filename}; GeoTiff already exists as {outputNameFinal}")
-        return
-
-
-    outputRaster = os.path.join(output_dir, outputNameFinal)
+        return outputRaster, image_start_time
 
     #collect bounding box coordinates
     #-a_ullr <ulx> <uly> <lrx> <lry>
@@ -119,6 +149,8 @@ def convert_to_geotiff(input_filename, output_dir):
 
     #Display image in QGIS (run it within QGIS python Console) - remove comment to display
     #iface.addRasterLayer(outputRaster, outputNameFinal)
+
+    return outputRaster, image_start_time
 
 
 
