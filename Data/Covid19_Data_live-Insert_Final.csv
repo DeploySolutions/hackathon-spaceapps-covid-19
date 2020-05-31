@@ -1,4 +1,4 @@
-﻿INSERT INTO "covid19-admin".public."CovidCases" ("Id"
+﻿INSERT INTO "postgres".public."CovidCases" ("Id"
     , "Placename"
     , "CaseOutcome"
     , "Lat"
