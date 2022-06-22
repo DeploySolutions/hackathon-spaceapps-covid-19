@@ -18,7 +18,7 @@
   "homepage": "https://github.com/NickKellett/hackathon-spaceapps-covid-19#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "got": "^11.1.4",
+    "got": "^11.8.5",
     "nodemon": "^2.0.4"
   }
 }
